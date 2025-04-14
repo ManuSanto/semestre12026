@@ -32,7 +32,7 @@ public string CorDoCarro()
 
 public void AtribuirNumeroDeRodas(int numero_de_rodas)
 {
-    
+    this.cor = cor;
 }
 
 }
