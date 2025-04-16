@@ -2,38 +2,36 @@ using UnityEngine;
 
 public class Teste : MonoBehaviour
 {
-    private Carro fusca = new Carro();
-    private Carro gol = new Carro();
+    Carro fusca = new Carro();
+    Carro gol = new Carro();
 
     void Start()
     {
-        fusca.AtribuirNome("Fusca de Pai");
+        fusca.AtribuirNome("Fusca do Pai");
         fusca.AtribuirCor("Amarelo");
         fusca.AtribuirNumeroDeRodas(4);
         fusca.AtribuirPreco(2050.90f);
-        Debug.Log("0" + fusca.NomeDoCarro() + "é" + fusca.CorDoCarro() + "tem" + fusca.AtribuirNumeroDeRodas() +
+        Debug.Log( "0 " + fusca.NomeDoCarro() + " é " + fusca.CorDoCarro() + " tem " + fusca.NumeroDeRodas() +
+                   " e o preco R$" + fusca.Preco());
 
-
-                  gol.AtribuirNome("Gol do falstão");
+        gol.AtribuirNome("Gol do Falstão");
         gol.AtribuirCor("Verde");
         gol.AtribuirNumeroDeRodas(4);
         gol.AtribuirPreco(3000.00f);
-        Debug.Log("0" + gol.NomeDoCarro());
+        Debug.Log("O " + gol.NomeDoCarro());
 
-        if (fusca.Comparepreco(gol))
-
+        if (fusca.ComparePreco(gol))
         {
-            Debug.Log("O Carro" + fusca.NomeDoCarro() + "é mais caro");
+            Debug.Log("O Carro " + fusca.NomeDoCarro() + " é mais caro do que o carro " + gol.NomeDoCarro());
         }
-
-
-
-    fusca.AtribuirNome("Fusca do Pai");
-        Debug.Log("0" + fusca.NomeDoCarro());
+        else
+        {
+            Debug.Log("O Carro " + fusca.NomeDoCarro() + " é mais barato do que o carro " + gol.NomeDoCarro());
+        }
+        
     }
 
-    // Update is called once per frame
-    void Update() 
+    void Update()
     {
         
     }
