@@ -4,6 +4,8 @@ public class Teste : MonoBehaviour
 {
     Carro fusca = new Carro();
     Carro gol = new Carro();
+    
+    Caminhao caminhao = new Caminhao();
 
     void Start()
     {
@@ -19,6 +21,22 @@ public class Teste : MonoBehaviour
         gol.AtribuirNumeroDeRodas(4);
         gol.AtribuirPreco(3000.00f);
         Debug.Log("O " + gol.NomeDoCarro());
+        
+        caminhao.AtribuirTipoDeCarroceria("Larga");
+        caminhao.AtribuirNumeroDeRodas(8);
+        caminhao.AtribuirPreco(6000.00f);
+        caminhao.AtribuirCor("Azul" );
+        caminhao.AtribuirNome("Caminhao do Falstão");
+        
+        //fusca.AtribuirTipoDeCarroceria("Larga);
+
+        if (fusca.ComparePreco(caminhao))
+        {
+            
+        }
+        
+        
+        
 
         if (fusca.ComparePreco(gol))
         {
