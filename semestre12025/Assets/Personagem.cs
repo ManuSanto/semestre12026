@@ -7,15 +7,15 @@ public class Personagem : MonoBehaviour
     [SerializeField]
     private string energia;
     [SerializeField]
-    private string forca_ataque;
+    private int forca_ataque;
     [SerializeField]
-    private string forca_do_pulo;
+    private int forca_do_pulo;
     [SerializeField]
-    private string velocidade;
+    private float velocidade;
     [SerializeField]
-    private string numero_de_pes;
+    private int numero_de_pes;
     [SerializeField]
-    private string numero_de_maos;
+    private int numero_de_maos;
 
 
     public void AtribuirNome(string nome)
@@ -23,32 +23,41 @@ public class Personagem : MonoBehaviour
         this.nome = nome;
     }
 
+    public int Forca_Atraque;
+
     public string atribuirenergia(string energia)
     {
         return this.nome;
     }
 
-    public void Atribuirforca_ataque(string forca_ataque)
+    
+    public void Atribuirforca_ataque(int forca_ataque)
     {
         this.forca_ataque = forca_ataque;
     }
 
-    public string atribuirforca_do_pulo(string forca_do_pulo)
+    public int Forca_Ataque()
     {
-        return this.forca_do_pulo;
+        return this.Forca_Ataque();
     }
 
-    public void atribuirvelocidade(string velocidade)
+    public void atribuirforca_do_pulo(int forca_do_pulo)
+    {
+         this.forca_do_pulo = forca_do_pulo;
+    }
+
+    
+    public void atribuirvelocidade(float velocidade)
     {
         this.velocidade = velocidade;
     }
 
-    public void atribuirnumero_de_pes(string numero_de_pes)
+    public void atribuirnumero_de_pes(int numero_de_pes)
     { 
         this.numero_de_pes = numero_de_pes;
     }
 
-    public void atribuirnumero_de_maos(string numero_de_maos)
+    public void atribuirnumero_de_maos(int numero_de_maos)
     {
         this.numero_de_maos = numero_de_maos;
     }
