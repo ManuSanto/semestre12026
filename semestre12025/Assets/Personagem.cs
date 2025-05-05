@@ -5,7 +5,7 @@ public class Personagem : MonoBehaviour
     [SerializeField]
     private string nome;
     [SerializeField]
-    private string energia;
+    private int energia;
     [SerializeField]
     private int forca_ataque;
     [SerializeField]
@@ -17,7 +17,13 @@ public class Personagem : MonoBehaviour
     [SerializeField]
     private int numero_de_maos;
 
-
+    public int Energia()
+    {
+        return this.energia;
+    }
+    
+    
+    
     public void AtribuirNome(string nome)
     {
         this.nome = nome;
@@ -61,8 +67,16 @@ public class Personagem : MonoBehaviour
     {
         this.numero_de_maos = numero_de_maos;
     }
-    
-    
-    
+
+
+    public void AtribuirEnergia(int energiaAtual)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public string Nome()
+    {
+        throw new System.NotImplementedException();
+    }
 }
 
