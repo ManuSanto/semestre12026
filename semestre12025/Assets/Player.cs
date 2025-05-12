@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
             posicao.x = posicao.x - velocidade * Time.deltaTime;
         }
 
-        //dirita
+        //direita
         if (Input.GetKey(KeyCode.A))
         {
             posicao.x = posicao.x + velocidade * Time.deltaTime;

@@ -31,9 +31,9 @@ public class Personagem : MonoBehaviour
 
     public int Forca_Atraque;
 
-    public string atribuirenergia(string energia)
+    public void atribuirenergia(int energia)
     {
-        return this.nome;
+       this.energia = energia;
     }
 
     
