@@ -66,6 +66,11 @@ public class Inimigo : Personagem
         
         return dano;
     }
+
+    public float Velocidade()
+    {
+        throw new System.NotImplementedException();
+    }
 }
 
 
