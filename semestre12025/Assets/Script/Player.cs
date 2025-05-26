@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     private Rigidbody _rigidbody;
 
     public float velocidade = 10;
+    public static bool Andando { get; set; }
 
 
     void Start()
