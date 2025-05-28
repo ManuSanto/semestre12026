@@ -10,8 +10,7 @@ public class Personagem : MonoBehaviour
     private int forca_ataque;
     [SerializeField]
     private int forca_do_pulo;
-    [SerializeField]
-    private float velocidade;
+    [SerializeField] public float velocidade;
     [SerializeField]
     private int numero_de_pes;
     [SerializeField]

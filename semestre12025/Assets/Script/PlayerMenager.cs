@@ -3,23 +3,16 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public Animator animator;
-    private Player movimentoPlayer;
+    private MovimentoPlayer movimentoPlayer;
     public float velocidadeDaAnimacao = 1;
-
-
+    
     void Start()
     {
-      movimentoPlayer = gameObject.GetComponent<Player>();
+        movimentoPlayer = GetComponent<MovimentoPlayer>();
     }
-    
-    void Update()
-        {
-            animator.SetBool("Andando", Player.Andando);
-            animator.speed  = velocidadeDaAnimacao;
-        }
+   void Update()
+    {
+      animator.SetBool("Andando", movimentoPlayer.andando);
+      animator.speed = velocidadeDaAnimacao;
+    }
 }
-
-
-
-
-
